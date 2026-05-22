@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ConnectButton } from "./components/connect-button";
 
 export default function Home() {
@@ -18,6 +19,12 @@ export default function Home() {
             To get started, edit the page.tsx file.
           </h1>
           <ConnectButton />
+          <Link
+            href="/tip-jar"
+            className="text-sm font-medium text-zinc-950 underline dark:text-zinc-50"
+          >
+            Open the Tip Jar demo →
+          </Link>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
             <a
